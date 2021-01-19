@@ -18,3 +18,39 @@
     transition: 0.1s;
     border-bottom:3px solid#282c34a8;
 }
+
+
+.menus .icon{
+    display:none;
+}
+@media screen and (max-width: 600px) {
+  .header{
+    flex-direction: column;
+  }
+  .menus{
+       margin:0;
+       padding:1%;
+       border-top: 4px solid #bb5c6c;
+       grid-gap:unset;
+       width:100%;
+  }
+  .menus > li{
+    border: 2px solid #c397a6f5;
+    padding: 2%;
+    border-radius: 100px;
+  }
+  }
+
+/* @media screen and (max-width: 600px) {
+  .menus.responsive {position: relative;}
+  .menus.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menus li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
