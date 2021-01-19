@@ -1,0 +1,8 @@
+#footer{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+#footer > *{
+        margin: 0;
+}

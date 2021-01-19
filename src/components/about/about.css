@@ -1,0 +1,23 @@
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap:2vw;
+    padding:3%;
+}
+.about > div:nth-child(1){
+    flex: 3;
+}
+.about > div:nth-child(2){
+    flex: 1;
+
+}
+.about > div:nth-child(1) > p {
+    font-size:calc(16px + 6 * ((100vw - 320px) / 680));
+}
+.about > div:nth-child(2) > img {
+    border-radius: 116px;
+    border-top: 4px solid #f941418f;
+    border-right: 4px solid #f941418f;
+    border-left: 4px solid #f941418f;
+}

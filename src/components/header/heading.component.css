@@ -1,0 +1,23 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: whitesmoke;
+    box-shadow: 1px 2px 5px var(--font-color);
+}
+
+.menus{
+    display: flex;
+    list-style-type: none;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menus > li :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom:4px solid #4a1bb6
+}
