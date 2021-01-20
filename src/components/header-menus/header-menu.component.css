@@ -39,7 +39,10 @@
     padding: 2%;
     border-radius: 100px;
   }
+  .menus > li {
+    flex: 1;
   }
+}
 
 /* @media screen and (max-width: 600px) {
   .menus.responsive {position: relative;}
