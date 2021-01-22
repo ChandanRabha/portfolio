@@ -1,0 +1,5 @@
+
+
+#Projects >div >*{
+    font-size:var(--responsive-font);   
+}

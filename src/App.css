@@ -4,8 +4,14 @@
   border:0;
   font-family: 'Pacifico', cursive;
 }
+html{
+  scroll-behavior: smooth;
+}
 @media only screen and (max-width: 600px) {
   html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
+    font-size:var(--responsive-font);   
+  }
+  .splash{
+    height:60vh !important;
   }
 }

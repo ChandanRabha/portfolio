@@ -1,0 +1,7 @@
+#Projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#Projects >div {
+    margin:0 auto 0 auto;
+}

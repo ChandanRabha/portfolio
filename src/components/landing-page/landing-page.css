@@ -5,7 +5,7 @@
     grid-gap: 2vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 2px 5px var(--font-color);
+    box-shadow: 1px 9px 5px var(--font-color);
     background: floralwhite;
     font-size:calc(16px + 6 * ((100vw - 320px) / 680));
     background-repeat: no-repeat;
@@ -14,6 +14,7 @@
     height: 90vh;
     padding:1%;
     background-attachment: fixed;
+    background-size:cover;
 }
 .pentagon {
       position: relative;
@@ -35,4 +36,27 @@
       border-style: solid;
       border-color: #663648 transparent
     }
-  
+#explore{
+    background: none;
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 32px;
+    color: white;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    text-decoration: none;
+    text-shadow: none;
+    transition:background ease-out 0.3s;
+
+}
+#explore:hover{
+  cursor:pointer;
+  background: whitesmoke;
+  color:var(--font-color);
+  transition: background ease-in 0.3s;
+}
+#explore:focus{
+  outline: none;
+  transition: none;
+}

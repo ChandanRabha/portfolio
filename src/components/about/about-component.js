@@ -2,7 +2,7 @@ import './about.css'
 import me from '../../res_external/img/Me.png';
 export const About= () => {
     return (
-        <div className='about'>
+        <div className='about' id="About">
             <div>
                 <h1>About Me</h1>
                 <p>I am a passionate Software Developer and love designing and making web applications as my hobby as well as my passion. I currently reside in Guwahati, India</p>

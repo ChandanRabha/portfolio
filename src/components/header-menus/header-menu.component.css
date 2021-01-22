@@ -12,11 +12,21 @@
     align-items: center;
     justify-content: center;
 }
-
-.menus>li:hover{
+.menus>li>a{
+  color:unset;
+  border:unset;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: unset;
+}
+.menus>li>a:hover{
     cursor: pointer;
     transition: 0.1s;
     border-bottom:3px solid#282c34a8;
+}
+.menus>li>a:focus{
+   outline: none;
+   border:none;
 }
 
 
@@ -38,10 +48,13 @@
     border: 2px solid #c397a6f5;
     padding: 2%;
     border-radius: 100px;
-  }
-  .menus > li {
     flex: 1;
+    text-align: center;
   }
+  .menus > li > a:hover{
+    border:none;
+  }
+
 }
 
 /* @media screen and (max-width: 600px) {
