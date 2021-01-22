@@ -60,3 +60,13 @@
   outline: none;
   transition: none;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .splash{
+    height:60vh !important;
+       background-attachment: unset !important;
+    
+  }
+}
+
