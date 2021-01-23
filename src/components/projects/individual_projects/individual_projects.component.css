@@ -1,5 +1,10 @@
 
 
 #Projects >div >*{
-    font-size:var(--responsive-font);   
+    font-size:var(--responsive-font);
+    width:100%;
+}
+#Projects >div >img{
+   border-radius: 6px;
+   box-shadow:3px 7px 4px grey;
 }

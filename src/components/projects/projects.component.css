@@ -1,7 +1,10 @@
 #Projects{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding:0% 5% 0% 5%;
+    grid-gap:2vw;
 }
 #Projects >div {
     margin:0 auto 0 auto;
+    text-align: center;
 }
