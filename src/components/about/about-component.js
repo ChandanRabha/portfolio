@@ -1,5 +1,5 @@
 import './about.css'
-import me from '../../res_external/img/Me.png';
+import me from '../../res_external/img/Me3.jpg';
 export const About= () => {
     return (
         <div className='about' id="About">
