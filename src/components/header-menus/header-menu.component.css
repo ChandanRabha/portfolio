@@ -29,14 +29,29 @@
    border:none;
 }
 
-
 .menus .icon{
     display:none;
 }
+
+.menus{
+    display: flex;
+    list-style-type: none;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menus > li :hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom:4px solid #4a1bb6
+}
+
+
+
 @media screen and (max-width: 600px) {
-  .header{
-    flex-direction: column;
-  }
+  
   .menus{
        margin:0;
        padding:1%;
@@ -54,7 +69,6 @@
   .menus > li > a:hover{
     border:none;
   }
-
 }
 
 /* @media screen and (max-width: 600px) {

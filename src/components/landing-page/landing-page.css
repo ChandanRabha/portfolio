@@ -5,7 +5,7 @@
     grid-gap: 2vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 9px 5px var(--font-color);
+    box-shadow: 1px 7px 5px var(--font-color);
     background: floralwhite;
     font-size:calc(16px + 6 * ((100vw - 320px) / 680));
     background-repeat: no-repeat;

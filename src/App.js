@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import 'animate.css';
 import './App.css';
+import '@fortawesome/fontawesome-free/js/all.js';
 import {Heading} from './components/header/heading.component';
 import {Landing} from './components/landing-page/landing-page';
 import {Footer} from './components/footer/footer-component';

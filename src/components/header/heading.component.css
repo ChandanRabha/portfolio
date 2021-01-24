@@ -5,19 +5,18 @@
     justify-content: space-around;
     background: whitesmoke;
     box-shadow: 1px 2px 5px var(--font-color);
+        border-bottom: 2px solid #8080807a;
+}
+#socials{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
 }
 
-.menus{
-    display: flex;
-    list-style-type: none;
-    grid-gap: 3rem;
-    align-items: center;
-    justify-content: center;
-
+@media screen and (max-width: 600px) {
+  .header{
+    flex-wrap: wrap;
+  }
 }
 
-.menus > li :hover{
-    cursor: pointer;
-    transition: 0.5s;
-    border-bottom:4px solid #4a1bb6
-}
+
