@@ -7,6 +7,7 @@ import {Landing} from './components/landing-page/landing-page';
 import {Footer} from './components/footer/footer-component';
 import {About}  from './components/about/about-component';
 import {Projects} from './components/projects/projects.component';
+import {Contact} from './components/contact/contact'
 
 //importing images
 import Open_Conference from './res_external/img/1.png' ;
@@ -29,8 +30,9 @@ export default class App extends Component {
          <Heading/>
          <Landing/>
          <About/>
-         <h1 style={{textAlign:'center'}}>Projects</h1>
+         <h1 style={{textAlign:'center',fontSize:'3rem'}}>Projects</h1>
          <Projects data={projects}/>
+         <Contact/>
          <Footer/>
      
     </div>
