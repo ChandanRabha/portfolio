@@ -1,9 +1,10 @@
-import splash_bg from '../../res_external/img/splash_bg.jpg';
+// import splash_bg from '../../res_external/img/splash_bg.jpg';
 import './landing-page.css';
 
 export const Landing = () => {
     return (
-        <div className='splash' style={{backgroundImage:`url(`+splash_bg+`)`}}>
+        // <div className='splash' style={{backgroundImage:`url(`+splash_bg+`)`}}>
+        <div className='splash' >
             <div style={{textAlign:'center',textShadow: '5px 1px grey'}}>
                  <h1 className='animate__animated animate__fadeInLeft'>Hi, My Name is Chandan Rabha</h1>
                  <h1 className='animate__animated animate__fadeIn animate__slow'>Welcome To My Dungeon</h1>

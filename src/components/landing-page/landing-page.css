@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 1px 7px 5px var(--font-color);
-    background: floralwhite;
+    background: rgba(255, 250, 240, 0);
     font-size:calc(16px + 6 * ((100vw - 320px) / 680));
     background-repeat: no-repeat;
     color: antiquewhite;

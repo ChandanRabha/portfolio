@@ -8,6 +8,7 @@ import {Footer} from './components/footer/footer-component';
 import {About}  from './components/about/about-component';
 import {Projects} from './components/projects/projects.component';
 import {Contact} from './components/contact/contact'
+import splash_bg from './res_external/img/splash_bg.jpg';
 
 //importing images
 import Open_Conference from './res_external/img/1.png' ;
@@ -26,11 +27,11 @@ export default class App extends Component {
     const {projects}=this.state;
     
      return(
-     <div className="App">
+     <div className="App" style={{backgroundImage:`url(`+splash_bg+`)`,backgroundAttachment:'fixed'}}>
          <Heading/>
          <Landing/>
          <About/>
-         <h1 style={{textAlign:'center',fontSize:'3rem'}}>Projects</h1>
+         <h1 id='titleProject'>Projects</h1>
          <Projects data={projects}/>
          <Contact/>
          <Footer/>
