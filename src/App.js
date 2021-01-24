@@ -27,7 +27,7 @@ export default class App extends Component {
     const {projects}=this.state;
     
      return(
-     <div className="App" style={{backgroundImage:`url(`+splash_bg+`)`,backgroundAttachment:'fixed'}}>
+     <div id="Home" className="App" style={{backgroundImage:`url(`+splash_bg+`)`,backgroundAttachment:'fixed'}}>
          <Heading/>
          <Landing/>
          <About/>
