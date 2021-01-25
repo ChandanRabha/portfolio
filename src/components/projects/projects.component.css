@@ -1,13 +1,19 @@
 #Projects{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding:0% 5% 3% 5%;
+    /* padding:0% 5% 3% 5%; */
     grid-gap:2vw;
     box-shadow: 1px 4px 7px grey;
     background: whitesmoke;
 }
 #Projects >div {
-    margin:0 auto 0 auto;
+    /* margin:0 auto 0 auto; */
     text-align: center;
-    padding: 1%;
+    padding: 3%;
+}
+
+@media only screen and (max-width:600px){
+    #Projects{
+        display: block !important;
+    }
 }
