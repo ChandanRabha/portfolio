@@ -7,6 +7,19 @@
 html{
   scroll-behavior: smooth;
 }
+
+#titleProject{
+    color:white;
+    margin: 0;
+    padding: 3%;
+    text-align:center;
+    font-size:3rem;
+    color:white;
+    text-shadow:1px 1px 2px #f94249;
+    background: #00000038
+}
+
+
 @media only screen and (max-width: 600px) {
   html {
     font-size:var(--responsive-font);   
@@ -14,4 +27,14 @@ html{
   .splash{
     height:60vh !important;
   }
+  .App{
+       background-attachment: unset !important;   
+       
+  }
+  #titleProject{
+      text-shadow:2px 3px 2px #f94249 !important;
+      background: linear-gradient(45deg, #35014c, #a0013b) !important;
+
+  }
 }
+
