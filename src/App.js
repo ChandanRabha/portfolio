@@ -20,7 +20,7 @@ export default class App extends Component {
   constructor(){
     super();
      this.state = {
-      projects:[['Online Video Conferencing',Open_Conference],['Monsteroo',Monster]]
+      projects:[['Online Video Conferencing',Open_Conference,'https://github.com/ChandanRabha/VideoConference','https://login-ohhyea.herokuapp.com/'],['Monsteroo',Monster,'https://github.com/ChandanRabha/monsteroo_ReactJS','#']]
     }
   }
   render(props) {
