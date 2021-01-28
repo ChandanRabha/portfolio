@@ -27,6 +27,7 @@
     flex-wrap: wrap;
     grid-gap: 1vw;
     max-width: 700px;
+    margin-top: 1vw;
 }
 #Contact >div > div > *:nth-child(1){
     flex:1;
@@ -55,6 +56,47 @@
     font-size: 1.1rem;
     margin-top:2%;
 }
+button[type=submit]{
+    cursor:pointer;
+}
+#Modal{
+    background-color: #00000073;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0%;
+    transition: all 0.5s ease-in;
+}
+#Modal > div {
+    background-color: white;
+    /* padding:1vw; */
+    border-radius: 4px;
+    transition:all 0.5s;
+    border-radius:23px;
+}
+#Modal >div >div{
+   color:white;
+   background: linear-gradient(45deg, #a0003c, #35014c);
+   margin: 0;padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#Modal >div >div>*{
+    margin:0;
+}
+#modalClose:hover{
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 600px) {
   #Contact >div{
     width:90%;

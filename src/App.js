@@ -8,6 +8,7 @@ import {Footer} from './components/footer/footer-component';
 import {About}  from './components/about/about-component';
 import {Projects} from './components/projects/projects.component';
 import {Contact} from './components/contact/contact'
+import {Modal} from './components/contact/contact'
 import splash_bg from './res_external/img/splash_bg.jpg';
 
 //importing images
@@ -23,7 +24,7 @@ export default class App extends Component {
       projects:[['Online Video Conferencing',Open_Conference,'https://github.com/ChandanRabha/VideoConference','https://login-ohhyea.herokuapp.com/'],['Monsteroo',Monster,'https://github.com/ChandanRabha/monsteroo_ReactJS','#']]
     }
   }
-  render(props) {
+  render() {
     const {projects}=this.state;
     
      return(
@@ -34,7 +35,9 @@ export default class App extends Component {
          <h1 id='titleProject'>Projects</h1>
          <Projects data={projects}/>
          <Contact/>
+         <Modal/>
          <Footer/>
+
      
     </div>
     )
