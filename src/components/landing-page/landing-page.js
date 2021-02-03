@@ -15,6 +15,7 @@ export const Landing = () => {
                 <div className="pentagon"></div>
                 <img style={{width:'100%',borderRadius:'100px'}} src={me} alt="Me"></img>
             </div> */}
+            <label style={{position:'absolute',left:'0',bottom:'0',visibility:'hidden'}} id="Pin_About">About Pin</label>
         </div>
     )
 }

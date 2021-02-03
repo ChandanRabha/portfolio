@@ -8,7 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 
-#titleProject{
+.titleProject{
     color:white;
     margin: 0;
     padding: 3%;
@@ -31,7 +31,7 @@ html{
        background-attachment: unset !important;   
        
   }
-  #titleProject{
+  .titleProject{
       text-shadow:2px 3px 2px #f94249 !important;
       background: linear-gradient(45deg, #35014c, #a0013b) !important;
 

@@ -1,6 +1,17 @@
 :root{
   --font-color:#F93C3CD6;
   --responsive-font:calc(16px + 6 * ((100vw - 320px) / 680)) !important;
+
+
+    --white: #fcfcfc;
+  --black: #252525;
+  
+  --purple: #cf07fb;
+  --purple-gradient:  linear-gradient(to top,  #9733EE, #cf07fb); 
+  
+  /*--green: #49e691; */
+  --green: #36e77e;
+  --green-gradient: linear-gradient(to top, #061700, #49e691); 
 }
 
 /* width */
@@ -43,3 +54,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+.box {
+  transform: translateX(-430%);
+  transition: transform 0.5s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-430%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+
+
+
+

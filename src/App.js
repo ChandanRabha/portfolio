@@ -16,6 +16,30 @@ import Open_Conference from './res_external/img/1.png' ;
 import Monster from './res_external/img/2.png' ;
 
 
+window.onload = ()=>{
+  const boxes = document.querySelectorAll('.box');
+// console.log(boxes)
+
+window.addEventListener('scroll', checkBoxes);
+
+checkBoxes(); // shows initial box(es) 
+
+function checkBoxes() {
+
+  const triggerBottom = (window.innerHeight / 5 * 4);
+  
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+    
+    if(boxTop < triggerBottom) {
+      box.classList.add('show');
+    } else {
+      box.classList.remove('show');
+    }
+  })
+}
+}
+
 
 export default class App extends Component {
   constructor(){
@@ -32,7 +56,7 @@ export default class App extends Component {
          <Heading/>
          <Landing/>
          <About/>
-         <h1 id='titleProject'>Projects</h1>
+         <h1 className='titleProject' id="Pin_Project">Projects</h1>
          <Projects data={projects}/>
          <Contact/>
          <Modal/>

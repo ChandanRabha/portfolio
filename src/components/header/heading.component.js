@@ -21,10 +21,10 @@ import {Socials} from '../socials/socials'
          <Socials icon="fab fa-linkedin  fa-2x" color="#0077b5" url="https://www.linkedin.com/in/chandan-rabha-2b5453152/"/>
        </div>
        <ul className='menus' id="menus">
-         <HeaderMenus title='Home' />
-         <HeaderMenus title='About' />
-         <HeaderMenus title='Projects' />
-         <HeaderMenus title='Contact' />
+         <HeaderMenus title='Home' pin="Home" />
+         <HeaderMenus title='About' pin='Pin_About'  />
+         <HeaderMenus title='Projects' pin='Pin_Project'  />
+         <HeaderMenus title='Contact'  pin='Contact' />
          {/* <li className='icon' onClick={myFunc}>X</li> */}
        </ul>
       
