@@ -36,6 +36,9 @@
       border-style: solid;
       border-color: #663648 transparent
     }
+
+
+
 #explore{
     background: none;
     border-radius: 100px;
@@ -49,6 +52,7 @@
     text-shadow: none;
     transition:background ease-out 0.3s;
 
+
 }
 #explore:hover{
   cursor:pointer;
@@ -56,10 +60,13 @@
   color:var(--font-color);
   transition: background ease-in 0.3s;
 }
+
 #explore:focus{
   outline: none;
   transition: none;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 

@@ -2,7 +2,7 @@ import './header-menu.component.css'
 
 function HeaderMenus(props) {
   return (
-         <li className='animate__animated'><a href={"#"+props.pin}>{props.title}</a></li>
+         <li className='animate__animated'><a href={"#"+props.title}>{props.title}</a></li>
 );
 }
 
