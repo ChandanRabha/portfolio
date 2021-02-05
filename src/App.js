@@ -14,6 +14,7 @@ import splash_bg from './res_external/img/splash_bg.jpg';
 //importing images
 import Open_Conference from './res_external/img/1.png' ;
 import Monster from './res_external/img/2.png' ;
+import TODO from './res_external/img/3.png' ;
 
 
 window.onload = ()=>{
@@ -45,7 +46,11 @@ export default class App extends Component {
   constructor(){
     super();
      this.state = {
-      projects:[['Online Video Conferencing',Open_Conference,'https://github.com/ChandanRabha/VideoConference','https://login-ohhyea.herokuapp.com/'],['Monsteroo',Monster,'https://github.com/ChandanRabha/monsteroo_ReactJS','#']]
+      projects:[
+        ['Online Video Conferencing',Open_Conference,'https://github.com/ChandanRabha/VideoConference','https://login-ohhyea.herokuapp.com/'],
+        ['Monsteroo',Monster,'https://github.com/ChandanRabha/monsteroo_ReactJS','https://chandanrabha.github.io/monsteroo_ReactJS/'],
+        ['Todo React App',TODO,'https://github.com/ChandanRabha/Todo_React_App','https://chandanrabha.github.io/Todo_React_App/']
+      ]
     }
   }
   render() {
