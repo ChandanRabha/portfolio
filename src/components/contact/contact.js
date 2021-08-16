@@ -4,7 +4,7 @@ import './contact.css'
  function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_0ejmj9f','template_iql1mqm', e.target, 'user_E2B31cQAudM3Ankfw3Lcg')
+    emailjs.sendForm('service_0ejmj9f','template_iql1mqm', e.target, 'user_E2B31cQAudM3 Ankfw3Lcg')
       .then((result) => {
           console.log(result.text);
           document.querySelector('#Modal').style.display="flex"

@@ -1,6 +1,7 @@
 import './heading.component.css'
 import HeaderMenus from '../header-menus/header-menu.component.js'
 import {Socials} from '../socials/socials'
+import {useState} from 'react'
 
  export const Heading = () => {
   //  function myFunc(e){
@@ -11,6 +12,7 @@ import {Socials} from '../socials/socials'
   //       x.className = "menus";
   // }
   //  }
+  const [menus]=useState([['Home'],['About'],['Projects'],['Contact']]);
   return (
     <div className='header'>
        <h1 className='animate__animated animate__rollIn'>CR</h1> 
@@ -21,12 +23,10 @@ import {Socials} from '../socials/socials'
          <Socials icon="fab fa-linkedin  fa-2x" color="#0077b5" url="https://www.linkedin.com/in/chandan-rabha-2b5453152/"/>
        </div>
        <ul className='menus' id="menus">
-         <HeaderMenus title='Home' pin="Home" />
-         <HeaderMenus title='About' pin='Pin_About'  />
-         <HeaderMenus title='Projects' pin='Pin_Project'  />
-         <HeaderMenus title='Contact'  pin='Contact' />
-         {/* <li className='icon' onClick={myFunc}>X</li> */}
-       </ul>
-      
+         {menus.map((data,index)=>(
+           <HeaderMenus title={data} key={index}  />
+         ))}
+
+       </ul>  
     </div>);
 }
