@@ -20,7 +20,7 @@ import Monster from './res_external/img/2.png';
 import TODO from './res_external/img/3.png';
 
 export const App = () => {
-	const [ projects ] = useState([
+	const [projects] = useState([
 		[
 			'Online Video Conferencing',
 			Open_Conference,
@@ -46,16 +46,11 @@ export const App = () => {
 			'https://chandanrabha.github.io/Todo_React_App/'
 		]
 	]);
+
 	useEffect(() => {
-		const boxes = document.querySelectorAll('.box');
-		// console.log(boxes)
-
-		window.addEventListener('scroll', checkBoxes);
-
-		checkBoxes(); // shows initial box(es)ṭ
-
 		function checkBoxes() {
-			const triggerBottom = window.innerHeight / 5 * 4;
+			const boxes = document.querySelectorAll('.box');
+			const triggerBottom = (window.innerHeight / 5) * 4;
 
 			boxes.forEach((box) => {
 				const boxTop = box.getBoundingClientRect().top;
@@ -66,10 +61,57 @@ export const App = () => {
 				}
 			});
 		}
+
+		window.addEventListener('scroll', checkBoxes);
+		checkBoxes(); // shows initial box(es)
+
+		return () => {
+			window.removeEventListener('scroll', checkBoxes);
+		};
+	}, []);
+
+	useEffect(() => {
+		const setMeta = (attrName, attrValue, content, attrKey = 'name') => {
+			let selector = `${attrKey}="${attrName}"`;
+			let el = document.querySelector(`meta[${selector}]`);
+			if (!el) {
+				el = document.createElement('meta');
+				el.setAttribute(attrKey, attrName);
+				document.head.appendChild(el);
+			}
+			el.setAttribute('content', content);
+		};
+
+		// Title
+		document.title = 'CR Portfolio — Chandan Rabha';
+
+		// Basic meta
+		setMeta('description', 'Chandan Rabha — Software developer. Portfolio showcasing projects and contact information.');
+		setMeta('robots', 'index, follow');
+
+		// Open Graph (use property attr)
+		setMeta('og:title', 'CR Portfolio — Chandan Rabha', 'CR Portfolio — Chandan Rabha', 'property');
+		setMeta('og:description', 'Chandan Rabha — Software developer. Portfolio showcasing projects and contact information.', 'Chandan Rabha — Software developer. Portfolio showcasing projects and contact information.', 'property');
+		setMeta('og:type', 'website', 'website', 'property');
+		setMeta('og:url', window.location.href, window.location.href, 'property');
+
+		// canonical link
+		let canonical = document.querySelector('link[rel="canonical"]');
+		if (!canonical) {
+			canonical = document.createElement('link');
+			canonical.setAttribute('rel', 'canonical');
+			document.head.appendChild(canonical);
+		}
+		canonical.setAttribute('href', window.location.href);
+
+		// optional: og:image
+		// setMeta('og:image', 'https://example.com/og-image.jpg', 'https://example.com/og-image.jpg', 'property');
+
+		// cleanup not required for single-page set, but you can store originals and restore on unmount if desired
 	}, []);
 
 	return (
-		<TestContext.Provider value={[ 1, 2, 3 ]}>
+		<TestContext.Provider value={[1, 2, 3]}>
 			<div
 				id="Home"
 				className="App"
@@ -91,4 +133,5 @@ export const App = () => {
 		</TestContext.Provider>
 	);
 };
+
 export default App;
