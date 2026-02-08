@@ -42,7 +42,7 @@ const CustomCursor = () => {
     document.addEventListener('mouseenter', handleMouseEnter)
     document.addEventListener('mouseleave', handleMouseLeave)
 
-    let rafId: number
+    let rafId: number = 0
 
     const tick = () => {
       pos.x += (mouse.x - pos.x) * speed
@@ -75,7 +75,7 @@ const CustomCursor = () => {
     })
 
     return () => {
-      cancelAnimationFrame(rafId)
+      if (rafId) cancelAnimationFrame(rafId)
       window.removeEventListener('mousemove', handleMouseMove)
       document.removeEventListener('mouseenter', handleMouseEnter)
       document.removeEventListener('mouseleave', handleMouseLeave)
