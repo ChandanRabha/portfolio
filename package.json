@@ -1,5 +1,4 @@
 {
-  "homepage": "https://chandanrabha.com",
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname chandanrabha.com"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
