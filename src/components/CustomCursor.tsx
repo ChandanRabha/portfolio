@@ -42,6 +42,8 @@ const CustomCursor = () => {
     document.addEventListener('mouseenter', handleMouseEnter)
     document.addEventListener('mouseleave', handleMouseLeave)
 
+    let rafId: number | undefined
+
     const tick = () => {
       pos.x += (mouse.x - pos.x) * speed
       pos.y += (mouse.y - pos.y) * speed
@@ -57,10 +59,10 @@ const CustomCursor = () => {
         trailYSets[i](trailY - 4)
       })
 
-      requestAnimationFrame(tick)
+      rafId = requestAnimationFrame(tick)
     }
 
-    tick()
+    rafId = requestAnimationFrame(tick)
 
     const interactiveElements = document.querySelectorAll('a, button, .skill-card, .project-card')
     interactiveElements.forEach(el => {
@@ -73,6 +75,7 @@ const CustomCursor = () => {
     })
 
     return () => {
+      if (rafId !== undefined) cancelAnimationFrame(rafId)
       window.removeEventListener('mousemove', handleMouseMove)
       document.removeEventListener('mouseenter', handleMouseEnter)
       document.removeEventListener('mouseleave', handleMouseLeave)
